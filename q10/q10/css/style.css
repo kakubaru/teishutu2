@@ -1,1 +1,95 @@
 @charset "UTF-8";
+
+.button {
+    display: flex;
+    justify-content: center; /* フレックス要素を中央寄せ */
+    cursor: pointer; /* カーソルをあわせたらポインターに変化 */
+}
+
+.ledbot {
+    margin: 0 15px;
+    padding: 0 15px;
+    color: #fff;
+    background: #fd0f0fd9;
+    border-radius: 10px;
+    line-height: 50px;
+}
+
+.bluebot {
+    margin: 0 15px;
+    padding: 0 15px;
+    color: #fff;
+    background: #170ffdd9;
+    border-radius: 10px;
+    line-height: 50px;
+}
+
+.greebot {
+    margin: 0 15px;
+    padding: 0 15px;
+    color: #000;
+    background: #0ffd0ed9;
+    border-radius: 10px;
+    line-height: 50px;
+}
+
+.shadow-r {
+    box-shadow: 0px 5px 0px 0px rgba(63, 5, 5, 0.851);
+}
+
+.shadow-b {
+    box-shadow: 0px 5px 0px 0px rgba(5, 13, 63, 0.851);
+}
+
+.shadow-g {
+    box-shadow: 0px 5px 0px 0px rgba(5, 63, 5, 0.851);
+}
+
+.act-push:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.actionb-1 {
+    margin: 0 15px;
+    padding: 0 15px;
+    color: #67c5ff;
+    border: double 4px #67c5ff;
+    border-radius: 10px;
+    line-height: 50px;
+}
+.color-ch {
+    transition: 0.5s;
+}
+.color-ch:hover {
+    background: #fffbef;
+}
+
+.actionb-2 {
+    margin: 0 15px;
+    padding: 0 15px;
+    color: #67c5ff;
+    border: dotted 4px #75caff;
+    border-radius: 10px;
+    line-height: 50px;
+}
+.bord-ch:hover {
+    border: dashed 4px #75caff;
+}
+
+.actionb-3 {
+    margin: 0 15px;
+    padding: 0 15px;
+    color: #67c5ff;
+    background: #d0edfff8;
+    border: dashed 4px #67c5ff;
+    border-radius: 10px;
+    line-height: 50px;
+}
+.botton-ch {
+    transition: 0.5s;
+}
+.botton-ch:hover {
+    color: #67c5ff;
+    background: #fff;
+}

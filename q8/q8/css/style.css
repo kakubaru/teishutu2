@@ -1,2 +1,22 @@
 @charset "UTF-8";
 
+.background-im {
+    height: 500px;
+    background-image: url(../../image/coffee-background.jpg);
+}
+
+.no-rp {
+    background-repeat: no-repeat;
+}
+
+.fullsize {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+.justsize {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* 元画像の縦横比を維持して要素内に収める */
+}

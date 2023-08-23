@@ -1,1 +1,41 @@
 @charset "UTF-8";
+
+.pos-cen {
+    display: flex;
+    justify-content: center;
+}
+
+.fukidasi {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    font-size: 16px;
+    background: #fad296;
+    border-radius: 30px;
+    border: solid 5px #8f5a0a;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.fukidasi::before {
+    content: ""; /* 疑似要素(brfore/after)を使用するための基本値。記号やテキストを表示させるときは""に記述 */
+    position: absolute;
+    bottom: -38px;
+    left: 9%;
+    transform: translateX(-50%); /* X軸方向へ移動 */
+    /* 三角を作る */
+    border: 20px solid transparent; /* 要素の透明化 */
+    border-top: 20px solid #fad296; /* topにだけ指定を入れて三角を作る */
+    z-index: 2; /* 要素の重なり順。大きいほうが前に出る */
+}
+
+.fukidasi::after { /* 要素の直後に挿入 */
+    content: "";
+    position: absolute;
+    bottom: -48px;
+    left: 9%;
+    transform: translateX(-50%);
+    border: 23px solid transparent;
+    border-top: 23px solid #8f5a0a;
+    z-index: 1;
+}
